@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Dark Mode Problem
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>I want this background to change with dark mode?</strong>
+    <br><br>
+    Dark Mode
+    <br>
+    <ion-toggle [(ngModel)]="this.myapp.dark" (ionChange)="myapp.updateDarkMode()" slot="end"></ion-toggle>
+    <div class="setBackgroundColor"></div>
+  </div>
+</ion-content>
