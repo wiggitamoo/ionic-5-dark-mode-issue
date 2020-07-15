@@ -216,7 +216,7 @@
    * -------------------------------------------
    */
 
-  body[data-theme="dark"] {
+  body.dark {
     @include browser-dark;
   }
 
@@ -225,7 +225,7 @@
    * -------------------------------------------
    */
 
-  .ios body[data-theme="dark"] {
+  .ios body.dark {
     @include ios-dark;
   }
 
@@ -235,13 +235,13 @@
    * -------------------------------------------
    */
 
-  .md body[data-theme="dark"] {
+  .md body.dark {
     @include md-dark;
   }
 }
 
 body.dark {
-  @include ios-dark;
+  @include browser-dark;
 }
 
 .ios body.dark {
